@@ -28,6 +28,20 @@ function filterItemsBySize(maxSize) {
   // Piste pour la boucle : items.forEach(item => { ... });
   
   // Ne pas oublier de mettre à jour le compteur d'éléments visibles
+  // const sizeOfW = items.length
+  for(let i = 0; i < items.length; i++){
+    console.log(items[i])
+  }
+
+  // const fitred = items.filter(items => items.length === maxSize)
+  // console.log(items)
+  // const fitred = items.forEach(items => {
+  //   if(items.length !== maxSize)
+  //     items.style.display !== 'none'
+  //   console.log(items)
+  // })
+
+  // console.log(fitred)
   updateCount();
 }
 
@@ -36,6 +50,9 @@ function filterItemsBySize(maxSize) {
  */
 function sortItemsAlphabetically() {
   const items = Array.from(itemList.children);
+  // const sorted = itemList.value
+  // sorted.sort()
+  // console.log(sorted)
 
   // TODO: Filtrer les éléments visibles, les trier par ordre alphabétique
   // avec localeCompare, puis les réinsérer dans itemList dans l'ordre.
